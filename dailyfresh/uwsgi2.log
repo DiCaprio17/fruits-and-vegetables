@@ -1,0 +1,105 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Nov 25 17:14:32 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1) on 30 October 2017 06:31:19
+os: Darwin-15.6.0 Darwin Kernel Version 15.6.0: Mon Jan  9 23:07:29 PST 2017; root:xnu-3248.60.11.2.1~1/RELEASE_X86_64
+nodename: smartli.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/smart/Desktop/dj/bj18/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /Users/smart/.virtualenvs/dailyfresh/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Oct 21 2017, 11:45:19)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]
+Set PythonHome to /Users/smart/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x7fa6e20006a0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415200 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa6e20006a0 pid: 8115 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8115)
+spawned uWSGI worker 1 (pid: 8116, cores: 2)
+spawned uWSGI worker 2 (pid: 8117, cores: 2)
+spawned uWSGI worker 3 (pid: 8118, cores: 2)
+spawned uWSGI worker 4 (pid: 8119, cores: 2)
+[pid: 8117|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:02 2017] GET /goods/8 => generated 9326 bytes in 479 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 8118|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:16 2017] GET /goods/8 => generated 9326 bytes in 375 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 8119|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 919 bytes} [Sat Nov 25 18:27:44 2017] POST /cart/add => generated 67 bytes in 408 msecs (HTTP/1.1 200) 3 headers in 94 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 27 12:47:32 2019] ***
+compiled with version: 5.4.0 20160609 on 25 May 2019 05:17:46
+os: Linux-4.15.0-50-generic #54~16.04.1-Ubuntu SMP Wed May 8 15:55:19 UTC 2019
+nodename: hnz-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/hnz/py/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/hnz/.virtualenvs/pytest/bin/uwsgi
+chdir() to /home/hnz/py/dailyfresh
+your processes number limit is 7643
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/hnz/.virtualenvs/pytest
+Python main interpreter initialized at 0x24fc680
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x24fc680 pid: 2500 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2500)
+spawned uWSGI worker 1 (pid: 2502, cores: 2)
+spawned uWSGI worker 2 (pid: 2503, cores: 2)
+spawned uWSGI worker 3 (pid: 2505, cores: 2)
+spawned uWSGI worker 4 (pid: 2508, cores: 2)
+[pid: 2502|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 737 bytes} [Mon May 27 12:48:59 2019] GET / => generated 3010 bytes in 6145 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+设置缓存
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2508|app: 0|req: 1/2] 127.0.0.1 () {40 vars in 747 bytes} [Mon May 27 12:50:16 2019] GET /index => generated 13287 bytes in 15039 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2508|app: 0|req: 2/3] 127.0.0.1 () {42 vars in 802 bytes} [Mon May 27 12:51:12 2019] GET /user/order/1 => generated 4559 bytes in 765 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2502|app: 0|req: 2/4] 127.0.0.1 () {42 vars in 792 bytes} [Mon May 27 12:51:49 2019] GET /user/ => generated 4602 bytes in 1135 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2508|app: 0|req: 3/5] 127.0.0.1 () {42 vars in 792 bytes} [Mon May 27 12:51:54 2019] GET /cart/ => generated 10865 bytes in 81 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2502|app: 0|req: 3/6] 127.0.0.1 () {42 vars in 810 bytes} [Mon May 27 12:52:03 2019] GET /goods/index.html => generated 3058 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2505|app: 0|req: 1/7] 127.0.0.1 () {46 vars in 883 bytes} [Mon May 27 12:52:12 2019] POST /cart/add => generated 67 bytes in 603 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 2/8] 127.0.0.1 () {42 vars in 789 bytes} [Mon May 27 12:52:41 2019] GET /goods/1 => generated 9465 bytes in 400 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2502|app: 0|req: 4/9] 127.0.0.1 () {46 vars in 882 bytes} [Mon May 27 12:52:50 2019] POST /cart/add => generated 67 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+/home/hnz/.virtualenvs/pytest/lib/python3.5/site-packages/django_redis/__init__.py:10: RemovedInDjango19Warning: 'get_cache' is deprecated in favor of 'caches'.
+  cache = get_cache(alias)
+
+[pid: 2503|app: 0|req: 1/10] 127.0.0.1 () {42 vars in 787 bytes} [Mon May 27 12:53:08 2019] GET /cart/ => generated 12253 bytes in 987 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 2508|app: 0|req: 4/11] 127.0.0.1 () {46 vars in 894 bytes} [Mon May 27 12:53:16 2019] POST /order/commit => generated 54 bytes in 217 msecs (HTTP/1.1 200) 3 headers in 94 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.

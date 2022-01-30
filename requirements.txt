@@ -4,7 +4,7 @@ billiard==3.3.0.23
 celery==3.1.25
 certifi==2019.3.9
 chardet==3.0.4
-Django==1.8.2
+Django==2.2.24
 django-haystack==2.7.0
 django-redis==3.8.4
 django-redis-sessions==0.5.6
